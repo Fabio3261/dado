@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registrazione</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h1>Accedi</h1>
+            <form id="loginFormSubmit">
+                <label for="loginEmail">Nome Utente o Email:</label>
+                <input type="text" id="loginEmail" placeholder="Inserisci nome utente/email" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                
+                <button type="submit">Accedi</button>
+            </form>
+            <p>Non hai un account? <a href="#" id="showRegister">Registrati</a></p>
+        </div>
+
+        <div id="registerForm" class="form-container hidden">
+            <h1>Registrati</h1>
+            <form id="registerFormSubmit">
+                <label for="registerUsername">Nome Utente:</label>
+                <input type="text" id="registerUsername" placeholder="Inserisci il tuo nome utente" required>
+                
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" placeholder="Inserisci nome utente/email" required>
+                
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" required>
+                
+                <button type="submit">Registrati</button>
+            </form>
+            <p>Hai già un account? <a href="#" id="showLogin">Accedi</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
